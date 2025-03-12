@@ -25,7 +25,7 @@ export const TitleLogIn = styled.h1`
     color: ${letterColor};
     font-weight: ${black};
     font-size: 36px;
-    margin: 25px auto;
+    margin: 25px auto 45px;
 `
 
 export const ContainerFormLogIn = styled.div`
@@ -88,7 +88,7 @@ export const BotonLogIn = styled.button`
 export const CrearCuenta = styled.span`
     transition: 0.5s;
     color: ${letterColor};
-    margin: 25px auto;
+    margin: 45px auto 25px;
     font-weight: ${medium};
     font-style: italic;
     font-size: 13px;
