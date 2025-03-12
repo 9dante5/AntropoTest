@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { black, firtsColor, letterColor, secondColor } from "./styledSheet";
+import { black, firtsColor, letterColor, secondColor } from "../helpers/styledSheet";
 
 export const ContainerLandingPage = styled.div`
     background-color: ${firtsColor};

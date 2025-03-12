@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { black, firtsColor, letterColor, medium, secondColor, thirdColor } from "./styledSheet";
+import { black, firtsColor, letterColor, medium, secondColor, thirdColor } from "../helpers/styledSheet";
 
 export const ContainerLogIn = styled.div`
     width: 100%;
@@ -85,17 +85,12 @@ export const BotonLogIn = styled.button`
     }
 `
 
-export const CrearCuenta = styled.span`
-    transition: 0.5s;
+export const CrearCuenta = styled.a`
     color: ${letterColor};
     margin: 45px auto 25px;
     font-weight: ${medium};
     font-style: italic;
     font-size: 13px;
     cursor: pointer;
-
-    &&:hover {
-        transition: 0.5s;
-        color:rgb(161, 153, 141);
-    }
+    text-decoration: none;
 `

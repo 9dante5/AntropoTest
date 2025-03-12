@@ -1,0 +1,1 @@
+export const mensajeCrearEntrenador = "https://wa.me/573187512596?text=Hola,%20me%20gustaría%20crear%20una%20cuenta%20en%20*AntropoTest*,%20¿que%20debo%20hacer?"
