@@ -7,7 +7,7 @@ import { useNavigate } from 'react-router-dom'
 import { black, letterColor, secondColor, semiBold, thirdColor } from '../helpers/styledSheet'
 
 const ContainerNavbar = styled.div`
-width: 100%;
+width: 95%;
 height: 90px;
 background-color: transparent;
 display: flex;
@@ -25,7 +25,6 @@ display: flex;
 flex-direction: row;
 align-items: center;
 justify-content: center;
-margin-left: 35px;
 cursor: pointer;
 `
 
@@ -48,7 +47,6 @@ const TituloAppNavbart = styled.h2`
 font-size: 25px;
 font-weight: ${black};
 color: ${letterColor};
-margin-right: 35px;
 cursor: default;
 
 &&:hover {

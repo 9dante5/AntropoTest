@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { firtsColor, secondColor, thirdColor } from "../helpers/styledSheet";
+import { firtsColor, letterColor, light, medium, regular, secondColor, semiBold, thirdColor } from "../helpers/styledSheet";
 
 
 export const ContainerDashboardAdmin = styled.div`
@@ -20,69 +20,112 @@ export const ContainerUsuarios = styled.div`
     justify-content: space-around;
     flex-wrap: wrap;
     gap: 10px;
-    margin-top: 80px;
+    margin: 40px 0;
 `
 
-export const ContainerGestionarUsuarios = styled.div`
-    width: 95%;
-    height: fit-content;
-    border: 1px solid ${secondColor};
-    border-radius: 5px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-    flex-wrap: wrap;
-`
-
-export const ContainerFormBuscarUsuarios = styled.div`
-    width: 100%;
-    height: 50px;
-    margin: 20px auto;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-`
-
-export const BotonCrearUsuario = styled.div`
-    width: 40px;
-    height: 40px;
-    background-color: ${thirdColor};
-    border-radius: 50%;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-`
-
-export const FormBuscarUsuario = styled.div`
-    width: fit-content;
-    height: fit-content;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-`
-
-export const InputBuscarUsuario = styled.input`
+export const ContainerAgregarUsuarios = styled.div`
     width: 200px;
-    height: 30px;
+    height: 35px;
+    border-radius: 10px;
     background-color: ${thirdColor};
-    border: 0;
-    border-radius: 5px;
-    outline: none;
-    padding: 0 8px;
-`
-
-export const BotonEstadisticas = styled.div`
-    width: 40px;
-    height: 40px;
-    background-color: ${thirdColor};
-    border-radius: 8px;
-    cursor: pointer;
     display: flex;
+    flex-direction: row;
     align-items: center;
     justify-content: center;
+    gap: 10px;
+    box-shadow: inset 0px 0px 11px ${letterColor};
+    border: 0;
+    cursor: pointer;
+    transition: 0.5s;
+
+    &&:hover {
+        transition: 0.5s;
+        box-shadow: inset 0px 0px 30px ${letterColor};
+    }
+`
+
+export const TituloContainerAgregarUsuarios = styled.h2`
+    font-size: 20px;
+    font-weight: ${medium};
+    color: ${letterColor};
+`
+
+export const ContainerFormCrearUsuario = styled.div`
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    background-color: ${secondColor};
+    border-radius: 8px;
+`
+
+export const TituloContainerFormCrearUsuario = styled.h3`
+    font-size: 30px;
+    font-weight: ${medium};
+    color: ${letterColor};
+    margin: 20px 0;
+`
+
+export const FormCrearUsuario = styled.form`
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0;
+`
+
+export const LabelFormCrearUsuario = styled.label`
+    font-size: 16px;
+    font-weight: ${light};
+    color: ${letterColor};
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+`
+
+export const InputFormCrearUsuario = styled.input`
+    width: 220px;
+    height: 30px;
+    margin-top: 2px;
+    background-color: ${thirdColor};
+    border: none;
+    border-radius: 3px;
+    outline: none;
+    padding: 0 5px;
+    color: ${letterColor};
+`
+
+export const SelectFormCrearUsuario = styled.select`
+    width: 230px;
+    height: 30px;
+    margin-top: 2px;
+    background-color: ${thirdColor};
+    border: none;
+    border-radius: 3px;
+    outline: none;
+    padding: 0 5px;
+    color: ${letterColor};
+`
+
+export const OptionsSelectFormCrearUsuario = styled.option`
+    padding: 0 5px;
+`
+
+export const BotonFromCrearUsuario = styled.button`
+    width: 100px;
+    height: 30px;
+    margin-top: 15px;
+    background-color: ${thirdColor};
+    border: none;
+    border-radius: 3px;
+    outline: none;
+    font-size: 16px;
+    font-weight: ${semiBold};
+    color: ${letterColor};
+    cursor: pointer;
 `

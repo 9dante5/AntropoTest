@@ -18,7 +18,7 @@ npm install @reduxjs/toolkit
 //icono
 npm install react-icons --save
 
-//marco de trabajo (material design)
+//marco de trabajo (material ui)
 npm install @mui/material @emotion/react @emotion/styled
 
 //alertas
